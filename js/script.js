@@ -224,12 +224,14 @@ function authorClickHandler(event){
   /* make new constant named "clickedElement" and give it the value of "this" */
   const clickedElement = this;
   console.log('Klikłaś w: '+clickedElement);
+  
   /* make a new constant "href" and read the attribute "href" of the clicked element */
   const href = clickedElement.getAttribute('href');
-console.log('Twoj href: '+href);
-  /* make a new constant "authorHref" and extract tag from the "href" constant */
-  const authorHref = href.replace('#author-', '').replace('#','');
-  console.log('hrefAuthor:' + authorHref);
+  console.log('Twoj href: '+href);
+  
+  /* make a new constant "author" and extract tag from the "href" constant */
+  const author = href.replace('#author-', '').replace('#','');
+  console.log('hrefAuthor:' + author);
 
   /* find all author links with class active */
   const activeAuthorLinks = document.querySelectorAll('a.active[data-author="*"]');
@@ -247,7 +249,7 @@ console.log('Twoj href: '+href);
   }
     
   /* find all author links with "href" attribute equal to the "href" constant */
-  const authorLinksHref = document.querySelectorAll('a[data-author="'+authorHref+'"]');
+  const authorLinksHref = document.querySelectorAll('a[data-author="'+author+'"]');
 
   /* START LOOP: for each found tag link */
   for(let authorLinkHref of authorLinksHref){
@@ -259,7 +261,7 @@ console.log('Twoj href: '+href);
   }
   
   /* execute function "generateTitleLinks" with article selector as argument */
-  generateTitleLinks('[data-author="' + authorHref + '"]');
+  generateTitleLinks('[data-author="' + author + '"]');
 }
 
 function addClickListenersToAuthors() {
