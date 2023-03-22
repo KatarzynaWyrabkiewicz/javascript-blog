@@ -1,0 +1,60 @@
+/*Slider*/
+.carousel-inner .carousel-item {
+  height: 100vh;
+  position: relative; 
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  text-align: center;
+  height: 70 px;
+  width: 70 px;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0; 
+}
+
+/*Products*/
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+}
+
+.card-body {
+  color: #ffffff; 
+}
+
+.more .card-body {
+  color: #ad9cbb; 
+}
+
+/*Contact*/
+.info {
+  background: #9785a3; 
+}
+
+.contact {
+  display: inline-block;
+  flex-wrap: wrap; }
+
+.btn .btn-info {
+  border: 1.5px solid;
+  border-radius: 5px; }
+
+.social-list ul {
+  list-style-type: none; }
+
+.social-list li {
+  display: inline;
+  padding: 3px; }
+
+.body {
+  text-decoration: none; }
