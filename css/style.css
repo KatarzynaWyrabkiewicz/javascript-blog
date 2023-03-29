@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f8e3f3;
+  background: #c6e6ff;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
@@ -46,7 +46,7 @@ body {
 }
 
 .sidebar, .posts {
-  background: #f8e3f3;
+  background: #c6e6ff;
   margin-right: 10px;
   padding: 40px;
   border: 1px solid #444;
